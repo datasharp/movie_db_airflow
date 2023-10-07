@@ -649,3 +649,24 @@
 [2023-10-07T00:39:55.208+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:39:55.208+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-10-07T00:39:55.274+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:39:55.274+0000] {dag.py:3508} INFO - Setting next_dagrun for movie_db_etl to 2023-10-07T00:00:00+00:00, run_after=2023-10-08T00:00:00+00:00
 [2023-10-07T00:39:55.321+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.212 seconds
+[2023-10-07T00:40:25.620+0000] {processor.py:157} INFO - Started process (PID=15303) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:25.622+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-07T00:40:25.625+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:25.624+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:25.642+0000] {processor.py:836} INFO - DAG(s) dict_keys(['movie_db_etl']) retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:25.679+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:25.679+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-07T00:40:25.741+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:25.741+0000] {dag.py:3508} INFO - Setting next_dagrun for movie_db_etl to 2023-10-07T00:00:00+00:00, run_after=2023-10-08T00:00:00+00:00
+[2023-10-07T00:40:25.774+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.161 seconds
+[2023-10-07T00:40:56.441+0000] {processor.py:157} INFO - Started process (PID=15379) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:56.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-07T00:40:56.450+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:56.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:56.481+0000] {processor.py:836} INFO - DAG(s) dict_keys(['movie_db_etl']) retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:40:56.563+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:56.562+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-07T00:40:56.649+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:40:56.648+0000] {dag.py:3508} INFO - Setting next_dagrun for movie_db_etl to 2023-10-07T00:00:00+00:00, run_after=2023-10-08T00:00:00+00:00
+[2023-10-07T00:40:56.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.272 seconds
+[2023-10-07T00:41:26.812+0000] {processor.py:157} INFO - Started process (PID=15457) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:41:26.814+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-07T00:41:26.817+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:41:26.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:41:26.836+0000] {processor.py:836} INFO - DAG(s) dict_keys(['movie_db_etl']) retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-07T00:41:26.876+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:41:26.875+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-07T00:41:26.923+0000] {logging_mixin.py:150} INFO - [2023-10-07T00:41:26.923+0000] {dag.py:3508} INFO - Setting next_dagrun for movie_db_etl to 2023-10-07T00:00:00+00:00, run_after=2023-10-08T00:00:00+00:00
+[2023-10-07T00:41:26.956+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.151 seconds
