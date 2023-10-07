@@ -1,0 +1,48 @@
+[2023-10-07T00:12:11.418+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie_db_etl.insert_into_map_film manual__2023-10-07T00:12:09.626999+00:00 [queued]>
+[2023-10-07T00:12:11.429+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie_db_etl.insert_into_map_film manual__2023-10-07T00:12:09.626999+00:00 [queued]>
+[2023-10-07T00:12:11.430+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-07T00:12:11.449+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): insert_into_map_film> on 2023-10-07 00:12:09.626999+00:00
+[2023-10-07T00:12:11.456+0000] {standard_task_runner.py:57} INFO - Started process 3079 to run task
+[2023-10-07T00:12:11.461+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'movie_db_etl', 'insert_into_map_film', 'manual__2023-10-07T00:12:09.626999+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/movie_db_***.py', '--cfg-path', '/tmp/tmpl9dhw8l2']
+[2023-10-07T00:12:11.466+0000] {standard_task_runner.py:85} INFO - Job 84: Subtask insert_into_map_film
+[2023-10-07T00:12:11.530+0000] {task_command.py:410} INFO - Running <TaskInstance: movie_db_etl.insert_into_map_film manual__2023-10-07T00:12:09.626999+00:00 [running]> on host 9e1bf037e24d
+[2023-10-07T00:12:11.632+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='movie_db_etl' AIRFLOW_CTX_TASK_ID='insert_into_map_film' AIRFLOW_CTX_EXECUTION_DATE='2023-10-07T00:12:09.626999+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-07T00:12:09.626999+00:00'
+[2023-10-07T00:12:11.635+0000] {sql.py:265} INFO - Executing: 
+        INSERT INTO map_film (title, director, film_year)
+        SELECT Title, Director, Year
+        FROM IMDB-Movie-Data_no_double_quotes l
+        WHERE NOT EXISTS (SELECT 1 FROM map_film m WHERE m.title = l.Title and m.director = l.Director and m.film_year = l.Year)
+        
+[2023-10-07T00:12:11.645+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-07T00:12:11.711+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-07T00:12:12.592+0000] {sql.py:375} INFO - Running statement: 
+        INSERT INTO map_film (title, director, film_year)
+        SELECT Title, Director, Year
+        FROM IMDB-Movie-Data_no_double_quotes l
+        WHERE NOT EXISTS (SELECT 1 FROM map_film m WHERE m.title = l.Title and m.director = l.Director and m.film_year = l.Year)
+        , parameters: None
+[2023-10-07T00:12:12.671+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "src/pymssql/_pymssql.pyx", line 459, in pymssql._pymssql.Cursor.execute
+  File "src/pymssql/_mssql.pyx", line 1087, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1118, in pymssql._mssql.MSSQLConnection.execute_query
+  File "src/pymssql/_mssql.pyx", line 1251, in pymssql._mssql.MSSQLConnection.format_and_run_query
+  File "src/pymssql/_mssql.pyx", line 1789, in pymssql._mssql.check_cancel_and_raise
+  File "src/pymssql/_mssql.pyx", line 1835, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near '-'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 277, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+  File "src/pymssql/_pymssql.pyx", line 476, in pymssql._pymssql.Cursor.execute
+pymssql._pymssql.ProgrammingError: (102, b"Incorrect syntax near '-'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+[2023-10-07T00:12:12.688+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=movie_db_etl, task_id=insert_into_map_film, execution_date=20231007T001209, start_date=20231007T001211, end_date=20231007T001212
+[2023-10-07T00:12:12.705+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 84 for task insert_into_map_film ((102, b"Incorrect syntax near '-'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n"); 3079)
+[2023-10-07T00:12:12.744+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-10-07T00:12:12.772+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

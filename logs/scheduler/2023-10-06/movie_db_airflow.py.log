@@ -1,0 +1,1585 @@
+[2023-10-06T23:22:51.072+0000] {processor.py:157} INFO - Started process (PID=4229) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:22:51.120+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:22:51.153+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:22:51.137+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:22:51.279+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:22:51.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.512 seconds
+[2023-10-06T23:25:10.125+0000] {processor.py:157} INFO - Started process (PID=4332) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:25:10.238+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:25:11.213+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:25:10.609+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:25:13.050+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:25:18.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 10.434 seconds
+[2023-10-06T23:26:30.132+0000] {processor.py:157} INFO - Started process (PID=4434) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:26:30.140+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:26:30.146+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:26:30.145+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:26:30.189+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:26:30.251+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.142 seconds
+[2023-10-06T23:27:01.000+0000] {processor.py:157} INFO - Started process (PID=4505) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:01.006+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:27:01.011+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:01.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:01.042+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:01.111+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.147 seconds
+[2023-10-06T23:27:28.282+0000] {processor.py:157} INFO - Started process (PID=4566) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:28.287+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:27:28.293+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:28.292+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:28.321+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:28.315+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 8
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:27:28.325+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:28.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.139 seconds
+[2023-10-06T23:27:29.792+0000] {processor.py:157} INFO - Started process (PID=4570) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:29.801+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:27:29.806+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:29.805+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:29.839+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:29.832+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:27:29.842+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:29.940+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.178 seconds
+[2023-10-06T23:27:37.853+0000] {processor.py:157} INFO - Started process (PID=4607) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:37.873+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:27:37.890+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:37.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:37.965+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:37.938+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:27:37.974+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:38.110+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.286 seconds
+[2023-10-06T23:27:39.747+0000] {processor.py:157} INFO - Started process (PID=4612) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:39.753+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:27:39.759+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:39.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:39.797+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:27:39.787+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:27:39.803+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:27:39.937+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.211 seconds
+[2023-10-06T23:28:20.626+0000] {processor.py:157} INFO - Started process (PID=4666) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:28:20.671+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:28:20.698+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:28:20.685+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:28:20.853+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:28:20.799+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:28:20.859+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:28:21.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.871 seconds
+[2023-10-06T23:29:09.339+0000] {processor.py:157} INFO - Started process (PID=4716) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:29:09.348+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:29:09.374+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:29:09.373+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:29:09.525+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:29:09.473+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:29:09.541+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:29:10.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 1.003 seconds
+[2023-10-06T23:30:42.397+0000] {processor.py:157} INFO - Started process (PID=4806) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:30:42.406+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:30:42.446+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:30:42.444+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:30:42.617+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:30:42.551+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:30:42.622+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:30:43.249+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.994 seconds
+[2023-10-06T23:31:19.041+0000] {processor.py:157} INFO - Started process (PID=4879) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:19.047+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:31:19.052+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:31:19.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:19.090+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:31:19.081+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:31:19.094+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:19.224+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.198 seconds
+[2023-10-06T23:31:50.107+0000] {processor.py:157} INFO - Started process (PID=4947) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:50.115+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:31:50.133+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:31:50.129+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:50.173+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:31:50.168+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:31:50.179+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:31:50.263+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.184 seconds
+[2023-10-06T23:32:20.473+0000] {processor.py:157} INFO - Started process (PID=5013) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:20.482+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:32:20.490+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:20.488+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:20.530+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:20.523+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:32:20.536+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:20.651+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.209 seconds
+[2023-10-06T23:32:51.011+0000] {processor.py:157} INFO - Started process (PID=5090) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:51.016+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:32:51.020+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:51.019+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:51.043+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:51.039+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:32:51.046+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:51.134+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.136 seconds
+[2023-10-06T23:32:57.368+0000] {processor.py:157} INFO - Started process (PID=5102) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:57.378+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:32:57.430+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:57.410+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:57.519+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:32:57.503+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:32:57.528+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:32:57.638+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.303 seconds
+[2023-10-06T23:33:27.879+0000] {processor.py:157} INFO - Started process (PID=5182) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:27.882+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:33:27.885+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:33:27.884+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:27.900+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:33:27.897+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:33:27.902+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:27.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.081 seconds
+[2023-10-06T23:33:58.069+0000] {processor.py:157} INFO - Started process (PID=5258) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:58.071+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:33:58.073+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:33:58.073+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:58.085+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:33:58.082+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:33:58.087+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:33:58.119+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.060 seconds
+[2023-10-06T23:34:28.323+0000] {processor.py:157} INFO - Started process (PID=5342) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:28.326+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:34:28.328+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:34:28.327+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:28.336+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:34:28.334+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:34:28.337+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:28.366+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.049 seconds
+[2023-10-06T23:34:58.514+0000] {processor.py:157} INFO - Started process (PID=5419) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:58.517+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:34:58.521+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:34:58.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:58.537+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:34:58.534+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:34:58.540+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:34:58.587+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.083 seconds
+[2023-10-06T23:35:28.887+0000] {processor.py:157} INFO - Started process (PID=5497) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:28.892+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:35:28.897+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:35:28.895+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:28.928+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:35:28.915+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:35:28.935+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:29.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.159 seconds
+[2023-10-06T23:35:59.838+0000] {processor.py:157} INFO - Started process (PID=5574) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:59.847+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:35:59.853+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:35:59.852+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:59.888+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:35:59.881+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:35:59.891+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:35:59.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.141 seconds
+[2023-10-06T23:36:30.786+0000] {processor.py:157} INFO - Started process (PID=5643) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:36:30.796+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:36:30.817+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:36:30.815+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:36:30.880+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:36:30.874+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:36:30.895+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:36:31.189+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.455 seconds
+[2023-10-06T23:37:32.707+0000] {processor.py:157} INFO - Started process (PID=5689) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:37:32.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:37:32.729+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:37:32.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:37:32.777+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:37:32.764+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:37:32.784+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:37:33.111+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.456 seconds
+[2023-10-06T23:38:03.281+0000] {processor.py:157} INFO - Started process (PID=5768) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:03.283+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:38:03.286+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:38:03.285+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:03.297+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:38:03.294+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:38:03.298+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:03.334+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.059 seconds
+[2023-10-06T23:38:33.595+0000] {processor.py:157} INFO - Started process (PID=5852) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:33.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:38:33.598+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:38:33.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:33.605+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:38:33.604+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:38:33.606+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:38:33.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.049 seconds
+[2023-10-06T23:39:03.737+0000] {processor.py:157} INFO - Started process (PID=5930) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:03.742+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:39:03.746+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:39:03.745+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:03.764+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:39:03.760+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:39:03.767+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:03.817+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.093 seconds
+[2023-10-06T23:39:36.109+0000] {processor.py:157} INFO - Started process (PID=6006) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:36.135+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:39:36.157+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:39:36.154+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:36.258+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:39:36.236+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:39:36.275+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:39:36.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.516 seconds
+[2023-10-06T23:40:28.968+0000] {processor.py:157} INFO - Started process (PID=6037) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:40:29.111+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:40:29.133+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:40:29.131+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:40:30.004+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:40:29.859+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:40:30.060+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:40:31.670+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 3.250 seconds
+[2023-10-06T23:42:54.988+0000] {processor.py:157} INFO - Started process (PID=6152) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:42:55.010+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:42:55.043+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:42:55.024+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:42:55.126+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:42:55.109+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:42:55.147+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:42:55.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.551 seconds
+[2023-10-06T23:43:25.842+0000] {processor.py:157} INFO - Started process (PID=6231) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:25.845+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:43:25.847+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:25.846+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:25.857+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:25.855+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 9
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:43:25.858+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:25.891+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.054 seconds
+[2023-10-06T23:43:49.137+0000] {processor.py:157} INFO - Started process (PID=6303) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:49.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:43:49.141+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:49.140+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:49.151+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:49.149+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 11
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:43:49.153+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:49.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.046 seconds
+[2023-10-06T23:43:50.555+0000] {processor.py:157} INFO - Started process (PID=6305) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:50.557+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:43:50.559+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:50.558+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:50.567+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:50.565+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 11
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:43:50.567+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:50.621+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.071 seconds
+[2023-10-06T23:43:54.666+0000] {processor.py:157} INFO - Started process (PID=6307) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:54.669+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:43:54.671+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:54.671+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:54.681+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:43:54.679+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 11
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:43:54.682+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:43:54.714+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.054 seconds
+[2023-10-06T23:44:24.781+0000] {processor.py:157} INFO - Started process (PID=6394) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:24.784+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:44:24.787+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:44:24.786+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:24.798+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:44:24.795+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 11
+    schedule_interval='@daily', catchup=False) as dag:
+                                                     ^
+SyntaxError: unexpected EOF while parsing
+[2023-10-06T23:44:24.799+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:24.835+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.061 seconds
+[2023-10-06T23:44:49.728+0000] {processor.py:157} INFO - Started process (PID=6461) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:49.731+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:44:49.734+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:44:49.733+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:49.756+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:44:49.752+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:44:49.758+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:44:49.803+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.082 seconds
+[2023-10-06T23:45:01.061+0000] {processor.py:157} INFO - Started process (PID=6478) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:01.064+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:45:01.068+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:01.067+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:01.102+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:01.095+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:45:01.105+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:01.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.143 seconds
+[2023-10-06T23:45:02.276+0000] {processor.py:157} INFO - Started process (PID=6481) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:02.279+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:45:02.282+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:02.281+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:02.306+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:02.302+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:45:02.308+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:02.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.082 seconds
+[2023-10-06T23:45:30.298+0000] {processor.py:157} INFO - Started process (PID=6557) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:30.301+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:45:30.304+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:30.304+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:30.331+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:30.327+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:45:30.333+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:30.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.098 seconds
+[2023-10-06T23:45:33.505+0000] {processor.py:157} INFO - Started process (PID=6570) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:33.508+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:45:33.512+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:33.511+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:33.540+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:45:33.535+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:45:33.543+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:45:33.598+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.101 seconds
+[2023-10-06T23:46:04.001+0000] {processor.py:157} INFO - Started process (PID=6655) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:04.004+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:46:04.008+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:46:04.007+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:04.028+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:46:04.022+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:46:04.030+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:04.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.088 seconds
+[2023-10-06T23:46:34.770+0000] {processor.py:157} INFO - Started process (PID=6742) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:34.774+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:46:34.778+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:46:34.777+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:34.799+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:46:34.791+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:46:34.801+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:46:34.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.096 seconds
+[2023-10-06T23:47:05.595+0000] {processor.py:157} INFO - Started process (PID=6820) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:05.598+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:47:05.601+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:05.600+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:05.613+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:05.609+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 5, in <module>
+    from airflow.providers.sql.operators.sql import SqlSensor, SqlOperator
+ModuleNotFoundError: No module named 'airflow.providers.sql'
+[2023-10-06T23:47:05.615+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:05.656+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.069 seconds
+[2023-10-06T23:47:21.686+0000] {processor.py:157} INFO - Started process (PID=6880) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:21.696+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:47:21.702+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:21.701+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:21.779+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:21.765+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:47:21.783+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:21.872+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.202 seconds
+[2023-10-06T23:47:24.944+0000] {processor.py:157} INFO - Started process (PID=6881) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:24.947+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:47:24.950+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:24.949+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:24.996+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:24.991+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:47:24.999+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:25.069+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.136 seconds
+[2023-10-06T23:47:55.470+0000] {processor.py:157} INFO - Started process (PID=6969) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:55.474+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:47:55.477+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:55.476+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:55.506+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:47:55.499+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:47:55.510+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:47:55.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.104 seconds
+[2023-10-06T23:48:25.644+0000] {processor.py:157} INFO - Started process (PID=7047) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:25.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:48:25.654+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:48:25.653+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:25.696+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:48:25.688+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:48:25.701+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:25.767+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.136 seconds
+[2023-10-06T23:48:58.458+0000] {processor.py:157} INFO - Started process (PID=7118) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:58.470+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:48:58.489+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:48:58.486+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:58.644+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:48:58.611+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:48:58.664+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:48:59.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.744 seconds
+[2023-10-06T23:49:48.356+0000] {processor.py:157} INFO - Started process (PID=7182) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:49:48.375+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:49:48.389+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:49:48.385+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:49:48.484+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:49:48.475+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:49:48.497+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:49:48.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.338 seconds
+[2023-10-06T23:50:19.691+0000] {processor.py:157} INFO - Started process (PID=7252) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:19.694+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:50:19.697+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:19.696+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:19.718+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:19.714+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 13, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:50:19.719+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:19.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.077 seconds
+[2023-10-06T23:50:35.809+0000] {processor.py:157} INFO - Started process (PID=7320) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:35.811+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:50:35.814+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:35.813+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:35.826+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:35.823+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7
+    from airflow.providers
+                         ^
+SyntaxError: invalid syntax
+[2023-10-06T23:50:35.828+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:35.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.067 seconds
+[2023-10-06T23:50:45.771+0000] {processor.py:157} INFO - Started process (PID=7326) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:45.773+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:50:45.775+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:45.775+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:45.795+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:45.792+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 7, in <module>
+    from airflow.providers.microsoft.mssql.operators.mssql import M
+ImportError: cannot import name 'M' from 'airflow.providers.microsoft.mssql.operators.mssql' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py)
+[2023-10-06T23:50:45.797+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:45.839+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.074 seconds
+[2023-10-06T23:50:49.564+0000] {processor.py:157} INFO - Started process (PID=7342) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:49.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:50:49.568+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:49.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:49.594+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:49.591+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 14, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:50:49.595+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:49.630+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.073 seconds
+[2023-10-06T23:50:50.594+0000] {processor.py:157} INFO - Started process (PID=7343) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:50.597+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:50:50.600+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:50.599+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:50.642+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:50:50.638+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 14, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:50:50.644+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:50:50.704+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.119 seconds
+[2023-10-06T23:51:20.963+0000] {processor.py:157} INFO - Started process (PID=7430) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:20.965+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:51:20.968+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:20.967+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:20.988+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:20.984+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 14, in <module>
+    insert_into_stg_film = SqlOperator(
+NameError: name 'SqlOperator' is not defined
+[2023-10-06T23:51:20.991+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:21.061+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.105 seconds
+[2023-10-06T23:51:30.355+0000] {processor.py:157} INFO - Started process (PID=7456) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:30.358+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:51:30.360+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:30.360+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:30.396+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:30.390+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+TypeError: __init__() got multiple values for keyword argument 'conn_id'
+[2023-10-06T23:51:30.397+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:30.440+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.090 seconds
+[2023-10-06T23:51:33.008+0000] {processor.py:157} INFO - Started process (PID=7463) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:33.011+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:51:33.014+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:33.013+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:33.042+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:51:33.038+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+TypeError: __init__() got multiple values for keyword argument 'conn_id'
+[2023-10-06T23:51:33.043+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:51:33.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.079 seconds
+[2023-10-06T23:52:03.888+0000] {processor.py:157} INFO - Started process (PID=7551) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:03.891+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:52:03.893+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:03.893+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:03.915+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:03.911+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+TypeError: __init__() got multiple values for keyword argument 'conn_id'
+[2023-10-06T23:52:03.917+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:03.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.075 seconds
+[2023-10-06T23:52:05.540+0000] {processor.py:157} INFO - Started process (PID=7558) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:05.543+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:52:05.546+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:05.546+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:05.583+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:05.575+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+TypeError: __init__() got multiple values for keyword argument 'conn_id'
+[2023-10-06T23:52:05.585+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:05.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.100 seconds
+[2023-10-06T23:52:36.165+0000] {processor.py:157} INFO - Started process (PID=7641) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:36.169+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:52:36.173+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:36.172+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:36.200+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:52:36.194+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+TypeError: __init__() got multiple values for keyword argument 'conn_id'
+[2023-10-06T23:52:36.203+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:52:36.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.088 seconds
+[2023-10-06T23:53:03.451+0000] {processor.py:157} INFO - Started process (PID=7711) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:03.454+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:03.462+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:03.460+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:03.518+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:03.512+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:03.519+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:03.567+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.125 seconds
+[2023-10-06T23:53:13.009+0000] {processor.py:157} INFO - Started process (PID=7747) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:13.013+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:13.018+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:13.017+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:13.065+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:13.058+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:13.067+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:13.119+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.119 seconds
+[2023-10-06T23:53:15.086+0000] {processor.py:157} INFO - Started process (PID=7748) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.089+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:15.093+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:15.092+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.128+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:15.123+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:15.131+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.101 seconds
+[2023-10-06T23:53:15.364+0000] {processor.py:157} INFO - Started process (PID=7750) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.367+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:15.371+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:15.370+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.426+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:15.416+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:15.436+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:15.490+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.134 seconds
+[2023-10-06T23:53:16.410+0000] {processor.py:157} INFO - Started process (PID=7758) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:16.413+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:16.417+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:16.416+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:16.468+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:16.460+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:16.472+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:16.530+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.136 seconds
+[2023-10-06T23:53:46.753+0000] {processor.py:157} INFO - Started process (PID=7848) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:46.756+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:53:46.758+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:46.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:46.782+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:53:46.777+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:53:46.785+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:53:46.830+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.088 seconds
+[2023-10-06T23:54:17.299+0000] {processor.py:157} INFO - Started process (PID=7926) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:17.301+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:54:17.302+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:54:17.302+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:17.319+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:54:17.316+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:54:17.321+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:17.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.056 seconds
+[2023-10-06T23:54:47.687+0000] {processor.py:157} INFO - Started process (PID=8004) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:47.690+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:54:47.692+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:54:47.691+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:47.710+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:54:47.707+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:54:47.712+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:54:47.744+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.063 seconds
+[2023-10-06T23:55:18.184+0000] {processor.py:157} INFO - Started process (PID=8091) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:18.186+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:55:18.188+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:55:18.188+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:18.206+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:55:18.203+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:55:18.208+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:18.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.064 seconds
+[2023-10-06T23:55:48.703+0000] {processor.py:157} INFO - Started process (PID=8162) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:48.705+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:55:48.707+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:55:48.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:48.725+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:55:48.721+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:55:48.727+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:55:48.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.064 seconds
+[2023-10-06T23:56:19.520+0000] {processor.py:157} INFO - Started process (PID=8247) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:19.525+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:19.529+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:19.528+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:19.574+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:19.568+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:56:19.581+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:19.643+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.135 seconds
+[2023-10-06T23:56:23.518+0000] {processor.py:157} INFO - Started process (PID=8260) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:23.522+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:23.527+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:23.525+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:23.561+0000] {processor.py:836} INFO - DAG(s) dict_keys(['movie_db_etl']) retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:23.911+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:23.911+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:movie_db_etl
+[2023-10-06T23:56:23.941+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:23.941+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:movie_db_etl
+[2023-10-06T23:56:23.959+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:23.959+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:movie_db_etl
+[2023-10-06T23:56:24.002+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:24.002+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-06T23:56:24.045+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:24.045+0000] {dag.py:2763} INFO - Creating ORM DAG for movie_db_etl
+[2023-10-06T23:56:24.083+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:24.083+0000] {dag.py:3508} INFO - Setting next_dagrun for movie_db_etl to 2023-10-05T00:00:00+00:00, run_after=2023-10-06T00:00:00+00:00
+[2023-10-06T23:56:24.140+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.634 seconds
+[2023-10-06T23:56:26.260+0000] {processor.py:157} INFO - Started process (PID=8263) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:26.263+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:26.267+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:26.266+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:26.314+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:26.306+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:56:26.318+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:26.375+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.127 seconds
+[2023-10-06T23:56:28.726+0000] {processor.py:157} INFO - Started process (PID=8272) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:28.730+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:28.734+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:28.733+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:28.753+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:28.750+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 36
+    autocommit=True
+             ^
+SyntaxError: invalid syntax
+[2023-10-06T23:56:28.756+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:28.814+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.099 seconds
+[2023-10-06T23:56:31.069+0000] {processor.py:157} INFO - Started process (PID=8274) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:31.078+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:31.085+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:31.084+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:31.116+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:31.108+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35
+    autocommit=True
+             ^
+SyntaxError: invalid syntax
+[2023-10-06T23:56:31.119+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:31.196+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.146 seconds
+[2023-10-06T23:56:47.472+0000] {processor.py:157} INFO - Started process (PID=8319) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:47.477+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:47.482+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:47.481+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:47.544+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:47.534+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:56:47.549+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:47.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.178 seconds
+[2023-10-06T23:56:50.399+0000] {processor.py:157} INFO - Started process (PID=8343) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:50.405+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:56:50.412+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:50.411+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:50.502+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:56:50.485+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:56:50.508+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:56:50.578+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.198 seconds
+[2023-10-06T23:57:20.954+0000] {processor.py:157} INFO - Started process (PID=8420) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:20.958+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:57:20.962+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:57:20.961+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:20.997+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:57:20.990+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:57:21.000+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:21.056+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.113 seconds
+[2023-10-06T23:57:52.214+0000] {processor.py:157} INFO - Started process (PID=8504) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:52.218+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:57:52.223+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:57:52.222+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:52.252+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:57:52.245+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:57:52.253+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:57:52.306+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.102 seconds
+[2023-10-06T23:58:23.081+0000] {processor.py:157} INFO - Started process (PID=8583) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:23.084+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:58:23.087+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:58:23.086+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:23.110+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:58:23.105+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:58:23.113+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:23.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.084 seconds
+[2023-10-06T23:58:53.363+0000] {processor.py:157} INFO - Started process (PID=8654) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:53.365+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:58:53.368+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:58:53.367+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:53.386+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:58:53.382+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:58:53.388+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:58:53.423+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.065 seconds
+[2023-10-06T23:59:23.833+0000] {processor.py:157} INFO - Started process (PID=8731) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:23.838+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:59:23.842+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:59:23.841+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:23.873+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:59:23.867+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:59:23.876+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:23.933+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.113 seconds
+[2023-10-06T23:59:54.641+0000] {processor.py:157} INFO - Started process (PID=8808) to work on /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:54.646+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/movie_db_airflow.py for tasks to queue
+[2023-10-06T23:59:54.649+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:59:54.648+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:54.686+0000] {logging_mixin.py:150} INFO - [2023-10-06T23:59:54.678+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/movie_db_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/movie_db_airflow.py", line 35, in <module>
+    autocommit=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/microsoft/mssql/operators/mssql.py", line 60, in __init__
+    super().__init__(conn_id=mssql_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 789, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to MsSqlOperator (task_id: insert_into_stg_film). Invalid arguments were:
+**kwargs: {'sql_server_conn_id': 'sqlserver'}
+[2023-10-06T23:59:54.689+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/movie_db_airflow.py
+[2023-10-06T23:59:54.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/movie_db_airflow.py took 0.164 seconds
