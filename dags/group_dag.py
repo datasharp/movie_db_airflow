@@ -12,7 +12,7 @@ from groups.group_staging_layer import staging_tasks
 with DAG('group_dag', start_date=datetime(2023, 1, 1), 
         schedule_interval='@daily', catchup=False) as dag:
     
-    args = {'star_date':dag.start_date,'schedule_interval':dag.schedule_interval,'catchup':dag.catchup}
+    args = {'start_date':dag.start_date,'schedule_interval':dag.schedule_interval,'catchup':dag.catchup}
 
     mapping_layer = mapping_tasks()
 
