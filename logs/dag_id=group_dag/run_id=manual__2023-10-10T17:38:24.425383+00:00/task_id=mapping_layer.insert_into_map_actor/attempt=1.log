@@ -1,0 +1,35 @@
+[2023-10-10T17:38:27.491+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.mapping_layer.insert_into_map_actor manual__2023-10-10T17:38:24.425383+00:00 [queued]>
+[2023-10-10T17:38:27.507+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.mapping_layer.insert_into_map_actor manual__2023-10-10T17:38:24.425383+00:00 [queued]>
+[2023-10-10T17:38:27.508+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:38:27.533+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): mapping_layer.insert_into_map_actor> on 2023-10-10 17:38:24.425383+00:00
+[2023-10-10T17:38:27.541+0000] {standard_task_runner.py:57} INFO - Started process 181 to run task
+[2023-10-10T17:38:27.551+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'mapping_layer.insert_into_map_actor', 'manual__2023-10-10T17:38:24.425383+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmpwcae4osc']
+[2023-10-10T17:38:27.558+0000] {standard_task_runner.py:85} INFO - Job 129: Subtask mapping_layer.insert_into_map_actor
+[2023-10-10T17:38:27.727+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.mapping_layer.insert_into_map_actor manual__2023-10-10T17:38:24.425383+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:38:27.977+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='mapping_layer.insert_into_map_actor' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T17:38:24.425383+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T17:38:24.425383+00:00'
+[2023-10-10T17:38:27.982+0000] {sql.py:265} INFO - Executing: 
+            INSERT INTO map_actor
+            SELECT DISTINCT Actor
+            FROM (SELECT trim(value)as Actor, Title, Year, Director
+                FROM (
+                    SELECT Actors, Title, Year, Director FROM land_movies 
+                        ) AS sub_query
+                CROSS APPLY string_split(sub_query.Actors,',') as actors_split) as v
+            WHERE NOT EXISTS (SELECT 1 FROM map_actor m WHERE m.actor = v.Actor)
+            
+[2023-10-10T17:38:28.002+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:38:28.226+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:38:29.133+0000] {sql.py:375} INFO - Running statement: 
+            INSERT INTO map_actor
+            SELECT DISTINCT Actor
+            FROM (SELECT trim(value)as Actor, Title, Year, Director
+                FROM (
+                    SELECT Actors, Title, Year, Director FROM land_movies 
+                        ) AS sub_query
+                CROSS APPLY string_split(sub_query.Actors,',') as actors_split) as v
+            WHERE NOT EXISTS (SELECT 1 FROM map_actor m WHERE m.actor = v.Actor)
+            , parameters: None
+[2023-10-10T17:38:29.226+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-10-10T17:38:29.266+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=mapping_layer.insert_into_map_actor, execution_date=20231010T173824, start_date=20231010T173827, end_date=20231010T173829
+[2023-10-10T17:38:29.381+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:38:29.545+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

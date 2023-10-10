@@ -1,0 +1,25 @@
+[2023-10-10T17:59:19.763+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_movie manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:19.853+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_movie manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:19.856+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:59:20.222+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): dimension_layer.insert_into_dim_movie> on 2023-10-10 17:58:18.587784+00:00
+[2023-10-10T17:59:20.282+0000] {standard_task_runner.py:57} INFO - Started process 1161 to run task
+[2023-10-10T17:59:20.406+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'dimension_layer.insert_into_dim_movie', 'manual__2023-10-10T17:58:18.587784+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmpwei5y1js']
+[2023-10-10T17:59:20.644+0000] {standard_task_runner.py:85} INFO - Job 168: Subtask dimension_layer.insert_into_dim_movie
+[2023-10-10T17:59:22.261+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.dimension_layer.insert_into_dim_movie manual__2023-10-10T17:58:18.587784+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:59:26.064+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='dimension_layer.insert_into_dim_movie' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T17:58:18.587784+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T17:58:18.587784+00:00'
+[2023-10-10T17:59:26.186+0000] {sql.py:265} INFO - Executing: 
+            INSERT INTO dim_actor_movie_assoc (dim_actor_movie_assoc_id ,actor_id, film_id)
+            SELECT stg_actor_film_id, actor_id, film_id FROM stg_actor_film_assoc s
+            WHERE NOT EXISTS (SELECT 1 FROM dim_actor_movie_assoc da WHERE da.actor_id = s.actor_id AND da.film_id = s.film_id)
+            
+[2023-10-10T17:59:26.413+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:28.589+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:29.780+0000] {sql.py:375} INFO - Running statement: 
+            INSERT INTO dim_actor_movie_assoc (dim_actor_movie_assoc_id ,actor_id, film_id)
+            SELECT stg_actor_film_id, actor_id, film_id FROM stg_actor_film_assoc s
+            WHERE NOT EXISTS (SELECT 1 FROM dim_actor_movie_assoc da WHERE da.actor_id = s.actor_id AND da.film_id = s.film_id)
+            , parameters: None
+[2023-10-10T17:59:29.918+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-10-10T17:59:30.090+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=dimension_layer.insert_into_dim_movie, execution_date=20231010T175818, start_date=20231010T175919, end_date=20231010T175930
+[2023-10-10T17:59:30.809+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:59:31.420+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

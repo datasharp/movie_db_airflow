@@ -1,0 +1,45 @@
+[2023-10-10T17:36:47.072+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.staging_layer.insert_into_stg_genre_film_assoc scheduled__2023-10-09T00:00:00+00:00 [queued]>
+[2023-10-10T17:36:47.096+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.staging_layer.insert_into_stg_genre_film_assoc scheduled__2023-10-09T00:00:00+00:00 [queued]>
+[2023-10-10T17:36:47.097+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:36:47.120+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): staging_layer.insert_into_stg_genre_film_assoc> on 2023-10-09 00:00:00+00:00
+[2023-10-10T17:36:47.130+0000] {standard_task_runner.py:57} INFO - Started process 86 to run task
+[2023-10-10T17:36:47.145+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'staging_layer.insert_into_stg_genre_film_assoc', 'scheduled__2023-10-09T00:00:00+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmpqrf9blla']
+[2023-10-10T17:36:47.152+0000] {standard_task_runner.py:85} INFO - Job 125: Subtask staging_layer.insert_into_stg_genre_film_assoc
+[2023-10-10T17:36:47.248+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.staging_layer.insert_into_stg_genre_film_assoc scheduled__2023-10-09T00:00:00+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:36:47.426+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='staging_layer.insert_into_stg_genre_film_assoc' AIRFLOW_CTX_EXECUTION_DATE='2023-10-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-09T00:00:00+00:00'
+[2023-10-10T17:36:47.430+0000] {sql.py:265} INFO - Executing: 
+            INSERT INTO stg_genre_film_assoc (film_id, genre_id)
+            SELECT mf.film_id, mg.genre_id
+            FROM
+            (
+            SELECT trim(value)as Genre, Title, Year, Director
+            FROM (SELECT Genre, Title, Year, Director FROM land_movies) AS sub_query
+            CROSS APPLY string_split(sub_query.Genre,',') 
+            ) s
+            INNER JOIN map_genre mg ON mg.genre = s.Genre
+            INNER JOIN map_film mf ON mf.director = s.Director
+                and mf.film_year = s.Year
+                and mf.title = s.Title 
+            WHERE NOT EXISTS (SELECT 1 FROM stg_genre_film_assoc sg WHERE sg.film_id = mf.film_id and sg.genre_id = mg.genre_id)
+            
+[2023-10-10T17:36:47.459+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:36:47.568+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:36:48.478+0000] {sql.py:375} INFO - Running statement: 
+            INSERT INTO stg_genre_film_assoc (film_id, genre_id)
+            SELECT mf.film_id, mg.genre_id
+            FROM
+            (
+            SELECT trim(value)as Genre, Title, Year, Director
+            FROM (SELECT Genre, Title, Year, Director FROM land_movies) AS sub_query
+            CROSS APPLY string_split(sub_query.Genre,',') 
+            ) s
+            INNER JOIN map_genre mg ON mg.genre = s.Genre
+            INNER JOIN map_film mf ON mf.director = s.Director
+                and mf.film_year = s.Year
+                and mf.title = s.Title 
+            WHERE NOT EXISTS (SELECT 1 FROM stg_genre_film_assoc sg WHERE sg.film_id = mf.film_id and sg.genre_id = mg.genre_id)
+            , parameters: None
+[2023-10-10T17:36:48.652+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-10-10T17:36:48.688+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=staging_layer.insert_into_stg_genre_film_assoc, execution_date=20231009T000000, start_date=20231010T173647, end_date=20231010T173648
+[2023-10-10T17:36:48.770+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:36:48.830+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

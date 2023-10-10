@@ -1,0 +1,29 @@
+[2023-10-10T17:59:19.731+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_director manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:20.257+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_director manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:20.295+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:59:20.874+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): dimension_layer.insert_into_dim_director> on 2023-10-10 17:58:18.587784+00:00
+[2023-10-10T17:59:20.958+0000] {standard_task_runner.py:57} INFO - Started process 1163 to run task
+[2023-10-10T17:59:21.169+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'dimension_layer.insert_into_dim_director', 'manual__2023-10-10T17:58:18.587784+00:00', '--job-id', '167', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmp3adyiuob']
+[2023-10-10T17:59:21.317+0000] {standard_task_runner.py:85} INFO - Job 167: Subtask dimension_layer.insert_into_dim_director
+[2023-10-10T17:59:22.985+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.dimension_layer.insert_into_dim_director manual__2023-10-10T17:58:18.587784+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:59:26.155+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='dimension_layer.insert_into_dim_director' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T17:58:18.587784+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T17:58:18.587784+00:00'
+[2023-10-10T17:59:26.205+0000] {sql.py:265} INFO - Executing:       
+            INSERT INTO dim_director
+            SELECT DISTINCT md.director_id, lm.director
+            FROM land_movies lm
+            INNER JOIN map_director md ON md.director = lm.director
+            WHERE NOT EXISTS (SELECT 1 FROM dim_director dd WHERE md.director = lm.director)
+            
+[2023-10-10T17:59:26.426+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:28.021+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:29.216+0000] {sql.py:375} INFO - Running statement:       
+            INSERT INTO dim_director
+            SELECT DISTINCT md.director_id, lm.director
+            FROM land_movies lm
+            INNER JOIN map_director md ON md.director = lm.director
+            WHERE NOT EXISTS (SELECT 1 FROM dim_director dd WHERE md.director = lm.director)
+            , parameters: None
+[2023-10-10T17:59:29.312+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-10-10T17:59:29.607+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=dimension_layer.insert_into_dim_director, execution_date=20231010T175818, start_date=20231010T175919, end_date=20231010T175929
+[2023-10-10T17:59:29.903+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:59:30.414+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1699,3 +1699,21 @@
 [2023-10-08T03:09:04.526+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:09:04.526+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-10-08T03:09:04.574+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:09:04.573+0000] {dag.py:3508} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
 [2023-10-08T03:09:04.613+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.536 seconds
+[2023-10-08T03:09:34.761+0000] {processor.py:157} INFO - Started process (PID=41835) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:09:34.765+0000] {processor.py:826} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2023-10-08T03:09:34.769+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:09:34.768+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:09:35.157+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_kubernetes_executor']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:09:35.243+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:09:35.242+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-08T03:09:35.292+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:09:35.292+0000] {dag.py:3508} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2023-10-08T03:09:35.353+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.599 seconds
+[2023-10-08T03:10:05.554+0000] {processor.py:157} INFO - Started process (PID=41915) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:10:05.558+0000] {processor.py:826} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2023-10-08T03:10:05.562+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:10:05.561+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:10:06.234+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_kubernetes_executor']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:10:06.353+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:10:06.351+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-10-08T03:10:06.443+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:10:06.443+0000] {dag.py:3508} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2023-10-08T03:10:06.508+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.964 seconds
+[2023-10-08T03:10:36.704+0000] {processor.py:157} INFO - Started process (PID=42001) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:10:36.711+0000] {processor.py:826} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2023-10-08T03:10:36.717+0000] {logging_mixin.py:150} INFO - [2023-10-08T03:10:36.716+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2023-10-08T03:10:37.887+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_kubernetes_executor']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_kubernetes_executor.py

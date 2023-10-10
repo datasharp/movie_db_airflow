@@ -1,0 +1,45 @@
+[2023-10-10T17:38:32.451+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.staging_layer.insert_into_stg_actor_film_assoc manual__2023-10-10T17:38:24.425383+00:00 [queued]>
+[2023-10-10T17:38:32.465+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.staging_layer.insert_into_stg_actor_film_assoc manual__2023-10-10T17:38:24.425383+00:00 [queued]>
+[2023-10-10T17:38:32.466+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:38:32.484+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): staging_layer.insert_into_stg_actor_film_assoc> on 2023-10-10 17:38:24.425383+00:00
+[2023-10-10T17:38:32.493+0000] {standard_task_runner.py:57} INFO - Started process 199 to run task
+[2023-10-10T17:38:32.502+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'staging_layer.insert_into_stg_actor_film_assoc', 'manual__2023-10-10T17:38:24.425383+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmpf5bs51e6']
+[2023-10-10T17:38:32.505+0000] {standard_task_runner.py:85} INFO - Job 136: Subtask staging_layer.insert_into_stg_actor_film_assoc
+[2023-10-10T17:38:32.579+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.staging_layer.insert_into_stg_actor_film_assoc manual__2023-10-10T17:38:24.425383+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:38:32.704+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='staging_layer.insert_into_stg_actor_film_assoc' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T17:38:24.425383+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T17:38:24.425383+00:00'
+[2023-10-10T17:38:32.707+0000] {sql.py:265} INFO - Executing: 
+            INSERT INTO stg_actor_film_assoc (actor_id, film_id)
+            SELECT DISTINCT ma.actor_id, mf.film_id 
+            FROM ( 
+                SELECT trim(value)as Actor, Title, Year, Director
+                FROM (
+                    SELECT Actors, Title, Year, Director FROM land_movies 
+                        ) AS sub_query
+                CROSS APPLY string_split(sub_query.Actors,',') as actors_split) as t
+            INNER JOIN map_actor as ma on ma.actor = t.Actor
+            INNER JOIN map_film as mf on mf.Title  =  t.Title
+                AND mf.film_year = t.Year
+                AND mf.director = t.Director
+            WHERE NOT EXISTS (SELECT 1 FROM stg_actor_film_assoc as a WHERE ma.actor_id = a.actor_id AND mf.film_id = a.film_id)
+            
+[2023-10-10T17:38:32.718+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:38:32.788+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:38:33.703+0000] {sql.py:375} INFO - Running statement: 
+            INSERT INTO stg_actor_film_assoc (actor_id, film_id)
+            SELECT DISTINCT ma.actor_id, mf.film_id 
+            FROM ( 
+                SELECT trim(value)as Actor, Title, Year, Director
+                FROM (
+                    SELECT Actors, Title, Year, Director FROM land_movies 
+                        ) AS sub_query
+                CROSS APPLY string_split(sub_query.Actors,',') as actors_split) as t
+            INNER JOIN map_actor as ma on ma.actor = t.Actor
+            INNER JOIN map_film as mf on mf.Title  =  t.Title
+                AND mf.film_year = t.Year
+                AND mf.director = t.Director
+            WHERE NOT EXISTS (SELECT 1 FROM stg_actor_film_assoc as a WHERE ma.actor_id = a.actor_id AND mf.film_id = a.film_id)
+            , parameters: None
+[2023-10-10T17:38:33.879+0000] {sql.py:384} INFO - Rows affected: 0
+[2023-10-10T17:38:33.902+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=staging_layer.insert_into_stg_actor_film_assoc, execution_date=20231010T173824, start_date=20231010T173832, end_date=20231010T173833
+[2023-10-10T17:38:33.963+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:38:33.991+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2023-10-10T17:59:19.107+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_genre manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:19.395+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: group_dag.dimension_layer.insert_into_dim_genre manual__2023-10-10T17:58:18.587784+00:00 [queued]>
+[2023-10-10T17:59:19.398+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-10-10T17:59:20.156+0000] {taskinstance.py:1327} INFO - Executing <Task(MsSqlOperator): dimension_layer.insert_into_dim_genre> on 2023-10-10 17:58:18.587784+00:00
+[2023-10-10T17:59:20.275+0000] {standard_task_runner.py:57} INFO - Started process 1160 to run task
+[2023-10-10T17:59:20.705+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'group_dag', 'dimension_layer.insert_into_dim_genre', 'manual__2023-10-10T17:58:18.587784+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/group_dag.py', '--cfg-path', '/tmp/tmp9d_sjqqd']
+[2023-10-10T17:59:20.959+0000] {standard_task_runner.py:85} INFO - Job 166: Subtask dimension_layer.insert_into_dim_genre
+[2023-10-10T17:59:22.870+0000] {task_command.py:410} INFO - Running <TaskInstance: group_dag.dimension_layer.insert_into_dim_genre manual__2023-10-10T17:58:18.587784+00:00 [running]> on host 2c73f027d5a5
+[2023-10-10T17:59:25.910+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='group_dag' AIRFLOW_CTX_TASK_ID='dimension_layer.insert_into_dim_genre' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T17:58:18.587784+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T17:58:18.587784+00:00'
+[2023-10-10T17:59:26.035+0000] {sql.py:265} INFO - Executing:       
+            INSERT INTO dim_genre (genre_id, genre)
+            SELECT s.genre_id, s.genre FROM stg_genre s
+            WHERE NOT EXISTS (SELECT 1 FROM dim_genre d WHERE d.genre_id = s.genre_id)
+            
+[2023-10-10T17:59:26.601+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:28.819+0000] {base.py:73} INFO - Using connection ID 'sqlserver' for task execution.
+[2023-10-10T17:59:30.055+0000] {sql.py:375} INFO - Running statement:       
+            INSERT INTO dim_genre (genre_id, genre)
+            SELECT s.genre_id, s.genre FROM stg_genre s
+            WHERE NOT EXISTS (SELECT 1 FROM dim_genre d WHERE d.genre_id = s.genre_id)
+            , parameters: None
+[2023-10-10T17:59:30.156+0000] {sql.py:384} INFO - Rows affected: 20
+[2023-10-10T17:59:30.244+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=group_dag, task_id=dimension_layer.insert_into_dim_genre, execution_date=20231010T175818, start_date=20231010T175919, end_date=20231010T175930
+[2023-10-10T17:59:30.952+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-10-10T17:59:31.536+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -113,7 +113,5 @@ def staging_tasks():
         autocommit=True
         )
 
-
-
         return group
 
