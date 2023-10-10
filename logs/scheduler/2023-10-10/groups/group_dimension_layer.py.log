@@ -148,3 +148,13 @@
 [2023-10-10T18:05:27.090+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:05:27.088+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_dimension_layer.py
 [2023-10-10T18:05:27.129+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_dimension_layer.py
 [2023-10-10T18:05:27.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_dimension_layer.py took 0.231 seconds
+[2023-10-10T18:06:00.913+0000] {processor.py:157} INFO - Started process (PID=4668) to work on /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:00.920+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_dimension_layer.py for tasks to queue
+[2023-10-10T18:06:00.926+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:06:00.925+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:00.952+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:01.094+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_dimension_layer.py took 0.199 seconds
+[2023-10-10T18:06:31.324+0000] {processor.py:157} INFO - Started process (PID=4748) to work on /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:31.327+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_dimension_layer.py for tasks to queue
+[2023-10-10T18:06:31.331+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:06:31.330+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:31.343+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_dimension_layer.py
+[2023-10-10T18:06:31.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_dimension_layer.py took 0.063 seconds
