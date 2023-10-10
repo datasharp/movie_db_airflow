@@ -258,3 +258,23 @@
 [2023-10-10T18:03:26.378+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:03:26.378+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_staging_layer.py
 [2023-10-10T18:03:26.387+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_staging_layer.py
 [2023-10-10T18:03:26.415+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_staging_layer.py took 0.049 seconds
+[2023-10-10T18:03:56.646+0000] {processor.py:157} INFO - Started process (PID=4366) to work on /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:03:56.648+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_staging_layer.py for tasks to queue
+[2023-10-10T18:03:56.649+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:03:56.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:03:56.657+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:03:56.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_staging_layer.py took 0.042 seconds
+[2023-10-10T18:04:27.091+0000] {processor.py:157} INFO - Started process (PID=4445) to work on /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:27.095+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_staging_layer.py for tasks to queue
+[2023-10-10T18:04:27.099+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:04:27.098+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:27.111+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:27.156+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_staging_layer.py took 0.075 seconds
+[2023-10-10T18:04:58.522+0000] {processor.py:157} INFO - Started process (PID=4526) to work on /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:58.533+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_staging_layer.py for tasks to queue
+[2023-10-10T18:04:58.545+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:04:58.544+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:58.596+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:04:58.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_staging_layer.py took 0.195 seconds
+[2023-10-10T18:05:29.831+0000] {processor.py:157} INFO - Started process (PID=4599) to work on /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:05:29.855+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/groups/group_staging_layer.py for tasks to queue
+[2023-10-10T18:05:29.877+0000] {logging_mixin.py:150} INFO - [2023-10-10T18:05:29.870+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:05:29.938+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_staging_layer.py
+[2023-10-10T18:05:30.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/groups/group_staging_layer.py took 0.298 seconds
