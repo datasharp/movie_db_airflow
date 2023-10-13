@@ -10,6 +10,8 @@ This repository contains Python code using Airflow to orchestrate an ETL process
 ## Introduction 
 This code uses the Apache-Airflow tool called TaskGroups to organize and group the code by layer: mapping, staging, and dimension. Airflow is being run inside a Docker container by using a docker-compose.yaml file. 
 
+Dockerfile has been used to establish a connection to SQL Server. This was necessary because the base Airflow setup did not include the specific configurations and dependencies required for this project's needs.
+
 ## Data Model 
 
 ![Screenshot](Star_Schema_Movie_Data_Set.png)
